@@ -1,0 +1,18 @@
+.component-scale-image-container {
+  box-shadow: inset 0px 250px 0px var(--black);
+  width: 100%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  & #set-height {
+    display: block;
+  }
+  & #v0 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}

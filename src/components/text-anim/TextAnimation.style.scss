@@ -1,0 +1,60 @@
+.text-animation-to-left {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  font-size: 100px;
+  color: white;
+  display: block;
+  white-space: nowrap;
+  width: 100%;
+  transform: translateX(100%);
+  text-align: left;
+  @media screen and (min-width: 1000px) and (max-width: 1200px) {
+    font-size: 70px;
+  }
+  @media screen and (min-width: 769px) and (max-width: 1000px) {
+    font-size: 50px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+    font-size: 40px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 599px) {
+    font-size: 30px;
+  }
+  @media screen and (min-width: 381px) and (max-width: 480px) {
+    font-size: 27px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 380px) {
+    font-size: 25px;
+  }
+}
+.text-animation-to-right {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  font-size: 40px;
+  color: white;
+  display: block;
+  white-space: nowrap;
+  width: 100%;
+  transform: translateX(-100%);
+  text-align: right;
+  @media screen and (min-width: 1000px) and (max-width: 1200px) {
+    font-size: 27px;
+  }
+  @media screen and (min-width: 769px) and (max-width: 1000px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 599px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 381px) and (max-width: 480px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 380px) {
+    font-size: 14px;
+  }
+}

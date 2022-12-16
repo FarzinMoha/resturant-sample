@@ -1,0 +1,185 @@
+.form-section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & .form-text1,
+  .form-text2 {
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    @media screen and (min-width: 650px) and (max-width: 850px) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: 500px) and (max-width: 649px) {
+      font-size: 23px;
+    }
+    @media screen and (min-width: 380px) and (max-width: 499px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 379px) {
+      font-size: 17px;
+    }
+  }
+  & .form-text2 {
+    letter-spacing: 2px;
+  }
+  & .form-container {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+      width: 80%;
+      flex-direction: column;
+      justify-content: center;
+    }
+    & .form-input-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 45%;
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: 70%;
+      }
+      @media screen and (max-width: 481px) {
+        width: 90%;
+      }
+      & .form-input {
+        margin: 20px 0px;
+        padding: 5px;
+        border-radius: 5px;
+        outline: none;
+        border: 2px solid var(--gray);
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+          margin: 10px 0px;
+        }
+      }
+      & .form-input {
+        width: 100%;
+        height: 50px;
+      }
+    }
+    & .form-textarea-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: 70%;
+      }
+      @media screen and (max-width: 481px) {
+        width: 90%;
+      }
+      & .form-textarea {
+        width: 100%;
+        height: 50px;
+        margin: 20px 0px;
+        padding: 5px;
+        border-radius: 5px;
+        outline: none;
+        border: 2px solid var(--gray);
+      }
+    }
+  }
+  & .form-err {
+    text-align: left;
+    margin-top: -20px;
+    margin-left: 5px;
+    color: red;
+    font-size: 12px;
+    float: left;
+    width: 100%;
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 481px) {
+      width: 90%;
+    }
+  }
+}
+.btn {
+  margin: 5px auto;
+  padding: 10px 20px;
+  background-color: var(--white);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  outline: none;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  &:disabled {
+    border: 2px solid transparent;
+    background-color: rgb(176, 176, 176);
+    color: rgb(156, 155, 155);
+    cursor: not-allowed;
+    &:hover {
+      border: 2px solid transparent;
+      background-color: rgb(176, 176, 176);
+      color: rgb(156, 155, 155);
+    }
+  }
+  &:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+}
+.send-message {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-150px);
+  bottom: 0;
+  right: 0;
+  background-color: var(--dark);
+  color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 32px 60px 4px;
+}
+input[type="time"] {
+  border: none;
+  color: #2a2c2d;
+  font-size: 14px;
+  font-family: helvetica;
+  width: 180px;
+}
+input[type="time"]::-webkit-datetime-edit-fields-wrapper {
+  display: flex;
+}
+input[type="time"]::-webkit-datetime-edit-text {
+  padding: 19px 4px;
+}
+input[type="time"]::-webkit-datetime-edit-hour-field {
+  background-color: #f2f4f5;
+  border-radius: 15%;
+  padding: 19px 13px;
+}
+input[type="time"]::-webkit-datetime-edit-minute-field {
+  background-color: #f2f4f5;
+  border-radius: 15%;
+  padding: 19px 13px;
+}
+input[type="time"]::-webkit-datetime-edit-ampm-field {
+  background-color: black;
+  border-radius: 10%;
+  color: #fff;
+  padding: 19px 13px;
+}
+input[type="time"]::-webkit-clear-button {
+  display: none;
+}
+input[type="time"]::-webkit-inner-spin-button {
+  display: none;
+}

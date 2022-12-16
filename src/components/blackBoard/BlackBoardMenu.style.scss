@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+@font-face {
+  font-family: DhonJako;
+  src: url("../../font/DhonJako\ St.ttf");
+}
+.blackboard-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  & .blackboard-bg {
+    position: relative;
+    background: url("../../image/blackboard.webp") no-repeat center center/cover;
+    width: 1000px;
+    height: 550px;
+    margin: -30px auto;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.6) 0px 22px 70px 4px;
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      width: 700px;
+      height: 700px;
+    }
+    @media screen and (min-width: 550px) and (max-width: 768px) {
+      width: 500px;
+      height: 700px;
+    }
+    @media screen and (min-width: 381px) and (max-width: 549px) {
+      width: 350px;
+      height: 1200px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 380px) {
+      width: 300px;
+      height: 1200px;
+    }
+    & .blackboard-bg-title {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-family: "Walter Turncoat", cursive;
+      font-weight: 900;
+      font-size: 55px;
+      color: transparent;
+      -webkit-text-stroke: 0.1px #ffffff;
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+        font-size: 45px;
+      }
+      @media screen and (min-width: 550px) and (max-width: 768px) {
+        font-size: 30px;
+        transform: translateY(20px);
+      }
+      @media screen and (min-width: 381px) and (max-width: 549px) {
+        font-size: 25px;
+        transform: translateY(20px);
+      }
+      @media screen and (min-width: 320px) and (max-width: 380px) {
+        font-size: 20px;
+        transform: translateY(20px);
+      }
+    }
+    & .right-menu {
+      position: absolute;
+      top: 100px;
+      left: 60%;
+      width: 35%;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      @media screen and (min-width: 320px) and (max-width: 549px) {
+        top: 590px;
+        left: 5%;
+        width: 50%;
+      }
+      & .panuozzi-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        &.margin {
+          @media screen and (max-width: 1024px) {
+            margin-top: 15px;
+          }
+        }
+        & .panuozzi-menu-title {
+          width: 100%;
+          height: 50px;
+          font-size: 40px;
+          border-bottom: 2px solid rgba(0, 223, 248, 0.5);
+          color: rgba(0, 223, 248, 0.6);
+          font-family: "Walter Turncoat", cursive;
+          -webkit-text-stroke: 1.5px rgba(0, 223, 248, 0.6);
+        }
+        & .panuozzi-menu-list {
+          width: 100%;
+          height: 150px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          align-items: center;
+          color: rgb(255, 255, 255, 0.5);
+          font-size: 21px;
+          font-family: "Walter Turncoat", cursive;
+          font-weight: 900;
+          & .panuozzi-menu-food {
+            text-transform: uppercase;
+            font-size: 21px;
+            width: 45%;
+            min-width: 100px;
+            cursor: pointer;
+            -webkit-text-stroke: 0.3px rgb(255, 255, 255, 0.5);
+            &:hover {
+              color: rgba(255, 247, 3);
+            }
+            @media screen and (max-width: 1024px) {
+              width: 100%;
+              margin-top: 5px;
+            }
+          }
+          & .panuozzi-menu-birra {
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-size: 20px;
+            width: 100%;
+            min-width: 100px;
+            -webkit-text-stroke: 0.3px rgb(255, 255, 255, 0.5);
+            cursor: pointer;
+            &:hover {
+              color: rgba(255, 247, 3);
+            }
+            @media screen and (max-width: 1024px) {
+              width: 100%;
+              margin-top: 5px;
+            }
+            &.margin {
+              @media screen and (max-width: 1024px) {
+                margin-top: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .left-menu {
+      position: absolute;
+      top: 100px;
+      left: 5%;
+      width: 50%;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      & .pizza-menu-title {
+        width: 100%;
+        height: 50px;
+        font-size: 40px;
+        border-bottom: 2px solid rgba(0, 223, 248, 0.5);
+        font-weight: 900;
+        color: rgba(0, 223, 248, 0.6);
+        -webkit-text-stroke: 1.5px rgba(0, 223, 248, 0.6);
+        font-family: "Walter Turncoat", cursive;
+      }
+      & .pizza-menu-list {
+        width: 100%;
+        height: 330px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        color: rgb(255, 255, 255, 0.5);
+        font-family: "Walter Turncoat", cursive;
+        font-weight: 900;
+        & .pizza-menu-food {
+          text-transform: uppercase;
+          font-size: 21px;
+          width: 50%;
+          min-width: 250px;
+          cursor: pointer;
+          -webkit-text-stroke: 0.3px rgb(255, 255, 255, 0.5);
+          &:hover {
+            color: rgba(255, 247, 3);
+          }
+          @media screen and (max-width: 1024px) {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}

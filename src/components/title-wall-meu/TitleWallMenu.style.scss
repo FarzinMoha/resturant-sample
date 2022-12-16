@@ -1,0 +1,63 @@
+@import "https://fonts.googleapis.com/css?family=Permanent+Marker";
+
+$r: 50px;
+$o: 25px;
+$d: 2s;
+$chars: 7;
+$bg: #111;
+
+$c: rgb(254, 254, 254) rgb(0, 0, 0) rgb(255, 255, 255);
+
+.menu-returant-name {
+  width: 100%;
+  font: 7vw/1 Permanent Marker;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 250px;
+  text-align: center;
+  color: snow;
+  transform: translateY(80px);
+  @media screen and (min-width: 450px) and (max-width: 600px) {
+    font: 60px Permanent Marker;
+    transform: translateY(0px);
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 381px) and (max-width: 449px) {
+    font: 50px Permanent Marker;
+    transform: translateY(0px);
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 320px) and (max-width: 380px) {
+    font: 40px Permanent Marker;
+    transform: translateY(0px);
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.menu-alpha-wall {
+  animation: glow1 $d ease-in-out both infinite;
+
+  @for $i from 1 through $chars {
+    &:nth-child(#{$i}) {
+      animation-delay: $i/$chars * -$d;
+    }
+  }
+}
+@mixin glow1($c1, $c2, $c3) {
+  text-shadow: 0 0 $r/6 snow, 0 (-$o) $r $c3, (-$o) $o $r $c2, $o $o $r $c3;
+}
+@keyframes glow1 {
+  0%,
+  100% {
+    @include glow1(nth($c, 1), nth($c, 2), nth($c, 3));
+  }
+  33% {
+    @include glow1(nth($c, 2), nth($c, 3), nth($c, 1));
+  }
+  66% {
+    @include glow1(nth($c, 3), nth($c, 1), nth($c, 2));
+  }
+}
