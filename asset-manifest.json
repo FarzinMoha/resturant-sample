@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/resturant-sample/static/css/main.8a911e79.css",
+    "main.js": "/resturant-sample/static/js/main.e2410f16.js",
+    "static/css/715.df6c27cd.chunk.css": "/resturant-sample/static/css/715.df6c27cd.chunk.css",
+    "static/js/715.b6119db2.chunk.js": "/resturant-sample/static/js/715.b6119db2.chunk.js",
+    "static/js/794.c2d9b8fd.chunk.js": "/resturant-sample/static/js/794.c2d9b8fd.chunk.js",
+    "static/media/GoodTime-bg.mp4": "/resturant-sample/static/media/GoodTime-bg.e76fc72cf354107d4eea.mp4",
+    "static/media/vino.mp4": "/resturant-sample/static/media/vino.a0137b9da74d2094fa58.mp4",
+    "static/media/song.mp3": "/resturant-sample/static/media/song.2d2456176b8e9e9f17cf.mp3",
+    "static/media/pizza-bg4.webp": "/resturant-sample/static/media/pizza-bg4.1f78496a842bccbbfd75.webp",
+    "static/media/panuozzi-bg3.webp": "/resturant-sample/static/media/panuozzi-bg3.729d7d4e869c6a419a98.webp",
+    "static/media/product-type-bg.webp": "/resturant-sample/static/media/product-type-bg.46309719be92cf2fa221.webp",
+    "static/media/pizza-bg.webp": "/resturant-sample/static/media/pizza-bg.499575ae87b862b0ab52.webp",
+    "static/media/panuozzi-bg.webp": "/resturant-sample/static/media/panuozzi-bg.d568e6592a458d3f0a1e.webp",
+    "static/media/pizza-bg3.webp": "/resturant-sample/static/media/pizza-bg3.55a488231ae197b7bc90.webp",
+    "static/media/panuozzi-bg2.webp": "/resturant-sample/static/media/panuozzi-bg2.1b6e28e7a3561215bda1.webp",
+    "static/media/products-bg.webp": "/resturant-sample/static/media/products-bg.4d0487a76eed7ac6fe0a.webp",
+    "static/media/pizza-bg2.webp": "/resturant-sample/static/media/pizza-bg2.f781a6a7cc1b33f7d3f9.webp",
+    "static/media/intro-bg.webp": "/resturant-sample/static/media/intro-bg.4d5c528ae04d3edf8183.webp",
+    "static/media/pizza1.webp": "/resturant-sample/static/media/pizza1.5fc55bfaf1342e0112dc.webp",
+    "static/media/final.webp": "/resturant-sample/static/media/final.3c5e444de4d5736a0f15.webp",
+    "static/media/pizza.webp": "/resturant-sample/static/media/pizza.05fd6680fdf5bfead774.webp",
+    "static/media/client.webp": "/resturant-sample/static/media/client.ec973881e4c72faf6e8f.webp",
+    "static/media/menu-bg.webp": "/resturant-sample/static/media/menu-bg.966f141400368920745e.webp",
+    "static/media/blackboard.webp": "/resturant-sample/static/media/blackboard.0680e48ccd9c864e79f7.webp",
+    "static/media/panuozzi.webp": "/resturant-sample/static/media/panuozzi.2d488fc21de0767b6814.webp",
+    "static/media/DhonJako St.ttf": "/resturant-sample/static/media/DhonJako St.90407f4a4f2bd94627a5.ttf",
+    "static/media/logo.webp": "/resturant-sample/static/media/logo.20a68e390c36813b68ab.webp",
+    "index.html": "/resturant-sample/index.html",
+    "main.8a911e79.css.map": "/resturant-sample/static/css/main.8a911e79.css.map",
+    "main.e2410f16.js.map": "/resturant-sample/static/js/main.e2410f16.js.map",
+    "715.df6c27cd.chunk.css.map": "/resturant-sample/static/css/715.df6c27cd.chunk.css.map",
+    "715.b6119db2.chunk.js.map": "/resturant-sample/static/js/715.b6119db2.chunk.js.map",
+    "794.c2d9b8fd.chunk.js.map": "/resturant-sample/static/js/794.c2d9b8fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a911e79.css",
+    "static/js/main.e2410f16.js"
+  ]
+}
